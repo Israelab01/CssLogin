@@ -1,93 +1,151 @@
-.card {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 40px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .title {
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F2F4FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: ;
+    left: ;
+    width: 90%;
+    height: 95vh;
+    background-color: white;
+    border-radius: 16px;
+    z-index: -1; /* Para que no se meta delante*/
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombras alrededor */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2.title {
     font-size: 24px;
     font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .subtitle {
+    margin-bottom: 10px;
+}
+
+p.subtitle {
     font-size: 14px;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .social-login {
+    color: #5A5A5A;
+    margin-bottom: 20px;
+}
+
+p.subtitle a {
+    color: #3D5AFE;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-login {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-  }
-  
-  .google-btn, .fb-btn {
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Botón de Google */
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 180px;
-    padding: 10px;
-    border: none;
+    height: 40px;
+    border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .google-btn {
-    background-color: #4285F4;
-    color: #fff;
-  }
-  
-  .fb-btn {
-    background-color: #3B5998;
-    color: #fff;
-  }
-  
-  .google-btn img, .fb-btn img {
-    width: 20px;
-    height: 20px;
+    background-color: white;
+    margin: 0 5px;
+}
+
+.google-btn img {
+    width: 18px;
+    height: 18px;
     margin-right: 10px;
-  }
-  
-  .btn-text {
+}
+
+p.btn-text {
     font-size: 14px;
-  }
-  
-  .or {
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  .email-login {
-    margin-bottom: 30px;
-  }
-  
-  .email-login label {
+    font-weight: bold;
+}
+
+
+.fb-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    margin: 0 5px;
+    padding: 0; 
+}
+
+.fb-btn img {
+    width: 24px; 
+    height: 24px;
+}
+
+
+p.or {
+    font-size: 12px;
+    color: #A6A6A6;
+}
+
+.email-login {
+    width: 100%;
+}
+
+.email-login label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
     display: block;
     margin-bottom: 5px;
-  }
-  
-  .email-login input {
+}
+
+.email-login input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  .cta-btn {
-    display: block;
+    margin-bottom: 15px;
+}
+
+.cta-btn {
     width: 100%;
     padding: 10px;
-    background-color: #3498db;
-    color: #fff;
+    background-color: #3D5AFE;
+    color: white;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-  }
-  
-  .forget-pass {
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-  }
+    margin-bottom: 10px;
+}
+
+.cta-btn:hover {
+    background-color: #303F9F;
+}
+
+a.forget-pass {
+    font-size: 12px;
+    color: #3D5AFE;
+    text-decoration: none;
+}
+
+a.forget-pass:hover {
+    text-decoration: underline;
+}
